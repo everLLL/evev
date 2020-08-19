@@ -17,6 +17,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <fastjson.version>1.2.73</fastjson.version>
+        <bitwalker.version>1.19</bitwalker.version>
     </properties>
 
     <modules>
@@ -51,6 +53,33 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
+<!--        hutoolg工具-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+        <!-- commons工具 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.11</version>
+        </dependency>
+
+        <!-- 阿里JSON解析器 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <!-- 解析客户端操作系统、浏览器等 -->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>${bitwalker.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
